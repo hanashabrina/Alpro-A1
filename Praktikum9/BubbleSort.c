@@ -9,12 +9,12 @@
 /*Sub Program untuk mengurutkan dari data yang terkecil ke terbesar*/
 void BubbleSortAsc(int arr[], int n)
 {
-	/*Kamus Lokal*/
-	int j;
-	int i;
-	int temp;
+    /*Kamus Lokal*/
+    int j;
+    int i;
+    int temp;
 
-	/*Algoritma*/
+    /*Algoritma*/
 	for(int i = 0; i < n-1; i++){
 		for(int j = 0; j < n-1; j++){
 			if(arr[j+1] < arr[j]){
@@ -29,12 +29,12 @@ void BubbleSortAsc(int arr[], int n)
 /*Sub Program untuk mengurutkan dari data yang terbesar ke terkecil*/
 void BubbleSortDesc(int arr[], int n)
 {
-	/*Kamus Lokal*/
-	int j;
-	int i;
-	int temp;
+    /*Kamus Lokal*/
+    int j;
+    int i;
+    int temp;
 
-	/*Algoritma*/
+    /*Algoritma*/
 	for(int i = 0; i < n-1; i++){
 		for(int j = 0; j < n-1; j++){
 			if(arr[j+1] > arr[j]){
@@ -60,17 +60,17 @@ int main()
     printf("Masukkan banyaknya jumlah data : ");
     scanf("%d", &n);
     printf("Masukkan data sebanyak %d\n", n);
-    for(int i = 0; i < n; i++){
-	printf("Data ke-%d = ", i+1);
-	scanf("%d", &arr[i]);
-    }
-    printf("\n");
-
-    /*Memanggil Sub Program*/
-    BubbleSortAsc(arr, n);
-    printf("Setelah Sorting Ascending : \n");
 	for(int i = 0; i < n; i++){
-	    printf("%d ", arr[i]);
+		printf("Data ke-%d = ", i+1);
+		scanf("%d", &arr[i]);
+	}
+	printf("\n");
+
+	/*Memanggil Sub Program*/
+	BubbleSortAsc(arr, n);
+	printf("Setelah Sorting Ascending : \n");
+	for(int i = 0; i < n; i++){
+		printf("%d ", arr[i]);
 	}
 	printf("\n");
 
