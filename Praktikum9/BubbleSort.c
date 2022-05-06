@@ -66,7 +66,7 @@ int main()
 	}
 	printf("\n");
 
-    /*Memanggil Sub Program*/
+	/*Memanggil Sub Program*/
 	BubbleSortAsc(arr, n);
 	printf("Setelah Sorting Ascending : \n");
 	for(int i = 0; i < n; i++){
