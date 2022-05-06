@@ -15,15 +15,15 @@ void BubbleSortAsc(int arr[], int n)
     int temp;
 
     /*Algoritma*/
-	for(i = 0; i < n-1; i++){
-		for(j = 0; j < n-1; j++){
-			if(arr[j+1] < arr[j]){
+    for(i = 0; i < n-1; i++){
+	for(j = 0; j < n-1; j++){
+	    if(arr[j+1] < arr[j]){
                 temp = arr[j];
-				arr[j] = arr[j+1];
-				arr[j+1] = temp;
-			}
-		}
+		arr[j] = arr[j+1];
+		arr[j+1] = temp;
+	    }
 	}
+    }
 }
 
 /*Sub Program untuk mengurutkan dari data yang terbesar ke terkecil*/
@@ -35,15 +35,15 @@ void BubbleSortDesc(int arr[], int n)
     int temp;
 
     /*Algoritma*/
-	for(i = 0; i < n-1; i++){
-		for(j = 0; j < n-1; j++){
-			if(arr[j+1] > arr[j]){
+    for(i = 0; i < n-1; i++){
+	for(j = 0; j < n-1; j++){
+	    if(arr[j+1] > arr[j]){
                 temp = arr[j];
-				arr[j] = arr[j+1];
-				arr[j+1] = temp;
-			}
-		}
+		arr[j] = arr[j+1];
+		arr[j+1] = temp;
+	    }
 	}
+    }
 }
 
 /*Program Utama*/
@@ -60,26 +60,26 @@ int main()
     printf("Masukkan banyaknya jumlah data : ");
     scanf("%d", &n);
     printf("Masukkan data sebanyak %d\n", n);
-	for(int i = 0; i < n; i++){
-		printf("Data ke-%d = ", i+1);
-		scanf("%d", &arr[i]);
-	}
-	printf("\n");
+    for(i = 0; i < n; i++){
+	printf("Data ke-%d = ", i+1);
+	scanf("%d", &arr[i]);
+    }
+    printf("\n");
 
     /*Memanggil Sub Program*/
-	BubbleSortAsc(arr, n);
-	printf("Setelah Sorting Ascending : \n");
-	for(int i = 0; i < n; i++){
-		printf("%d ", arr[i]);
-	}
-	printf("\n");
+    BubbleSortAsc(arr, n);
+    printf("Setelah Sorting Ascending : \n");
+    for(i = 0; i < n; i++){
+	printf("%d ", arr[i]);
+    }
+    printf("\n");
 
-	/*Memanggil Sub Program*/
-	BubbleSortDesc(arr, n);
-	printf("\nSetelah Sorting Descending : \n");
-	for(int i = 0; i < n; i++){
-		printf("%d ", arr[i]);
-	}
-	printf("\n");
-	return 0;
+    /*Memanggil Sub Program*/
+    BubbleSortDesc(arr, n);
+    printf("\nSetelah Sorting Descending : \n");
+    for(i = 0; i < n; i++){
+	printf("%d ", arr[i]);
+    }
+    printf("\n");
+    return 0;
 }
